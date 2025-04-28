@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Our Services - Cloud Print{% endblock %}
+
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Services Section -->
+<section class="services">
+    <div class="services-content">
+        <h1>Our Services</h1>
+        <p>Explore the range of services we offer to cater to all your printing needs. We guarantee high-quality prints with the best customer experience.</p>
+    </div>
+
+    <div class="services-list">
+        <!-- Service 1 -->
+        <div class="service-item">
+            <i class="fas fa-print fa-3x"></i>
+            <h2>Printing Services</h2>
+            <p>We offer high-quality printing services for all your needs, from documents to large posters.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-item">
+            <i class="fas fa-paperclip fa-3x"></i>
+            <h2>Binding & Finishing</h2>
+            <p>Our binding and finishing services ensure that your print jobs are professionally prepared and ready for presentation.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-item">
+            <i class="fas fa-cogs fa-3x"></i>
+            <h2>Custom Orders</h2>
+            <p>We provide custom printing and design services tailored to meet your unique requirements.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-item">
+            <i class="fas fa-truck fa-3x"></i>
+            <h2>Delivery & Shipping</h2>
+            <p>We offer prompt delivery and shipping services, ensuring your prints reach you in perfect condition, wherever you are.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

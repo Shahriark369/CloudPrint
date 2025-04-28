@@ -1,0 +1,88 @@
+/* Services Section */
+.services {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 50px;
+    color: #00ff00;
+    text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00;
+}
+
+.services p {
+    font-size: 18px;
+    color: #bbb;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Services List */
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service-item {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item i {
+    color: #00ff00;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item h2 {
+    font-size: 24px;
+    color: #00ff00;
+    margin-top: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Hover Effect for Service Item */
+.service-item:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.service-item:hover i {
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+.service-item:hover h2 {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.service-item:hover p {
+    color: #00ff00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

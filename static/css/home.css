@@ -1,0 +1,151 @@
+/* Section for home page */
+.home {
+    background: linear-gradient(135deg, #1e2a47, #1a6b5d); /* Blue & electric green neon gradient */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #e1e1e1;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #00ff00;
+    color: #111;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #0000ff;
+    box-shadow: 0 0 30px rgba(0, 0, 255, 0.7);
+    transform: scale(1.1);
+}
+
+/* Overview Section */
+.overview {
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.overview h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.overview-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.card i {
+    color: #00ff00;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #00ff00;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.card p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #111;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-btn:hover {
+    background-color: #0000ff;
+    box-shadow: 0 0 30px rgba(0, 0, 255, 0.7);
+    transform: scale(1.1);
+}
+
+/* Hover Effects for Card */
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.card:hover i {
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+.card:hover h3 {
+    text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00;
+}
+
+.card:hover p {
+    color: #00ff00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .overview-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

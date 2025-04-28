@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Cloud Print{% endblock %}
+
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Home Section -->
+<section class="home">
+    <div class="hero">
+        <h1>Welcome to Cloud Print</h1>
+        <p>Your trusted online print service with fast, reliable, and quality prints.</p>
+        <a href="#services" class="cta-btn">Explore Services <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Overview of Website Pages -->
+    <div class="overview">
+        <h2>Website Overview</h2>
+        <div class="overview-cards">
+            <!-- About Card -->
+            <div class="card">
+                <i class="fas fa-info-circle fa-3x"></i>
+                <h3>About Us</h3>
+                <p>Learn more about our mission and services that we offer to make printing easier for you.</p>
+                <a href="/about" class="card-btn">Learn More</a>
+            </div>
+
+            <!-- Services Card -->
+            <div class="card">
+                <i class="fas fa-cogs fa-3x"></i>
+                <h3>Services</h3>
+                <p>We offer various printing services, from documents to photos with exceptional quality.</p>
+                <a href="/services" class="card-btn">View Services</a>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="card">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Contact Us</h3>
+                <p>Have questions? Reach out to our customer support team for assistance.</p>
+                <a href="/contact" class="card-btn">Get in Touch</a>
+            </div>
+
+            <!-- FAQ Card -->
+            <div class="card">
+                <i class="fas fa-question-circle fa-3x"></i>
+                <h3>FAQ</h3>
+                <p>Find answers to your common questions about our printing services and policies.</p>
+                <a href="/faq" class="card-btn">See FAQs</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

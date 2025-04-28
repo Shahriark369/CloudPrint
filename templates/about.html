@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Cloud Print{% endblock %}
+
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- About Section -->
+<section class="about">
+    <div class="about-content">
+        <h1>About Us</h1>
+        <p>Cloud Print is revolutionizing the way you print documents. We offer fast, secure, and efficient printing solutions accessible from anywhere, anytime. With a focus on high-quality prints and seamless cloud integration, we make printing simple and easy for everyone.</p>
+        <p>Our mission is to provide a reliable and affordable printing service that can be accessed from any device, at any time, and from any place.</p>
+    </div>
+</section>
+
+<!-- Our Team Section -->
+<section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+        <div class="team-member">
+            <i class="fas fa-user-tie"></i>
+            <h3>John Doe</h3>
+            <p>CEO</p>
+            <p>Passionate about innovative tech solutions and providing excellent customer service.</p>
+        </div>
+        <div class="team-member">
+            <i class="fas fa-users-cog"></i>
+            <h3>Jane Smith</h3>
+            <p>CTO</p>
+            <p>Expert in cloud computing and leading our tech team to build scalable solutions.</p>
+        </div>
+        <div class="team-member">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Mike Johnson</h3>
+            <p>Project Manager</p>
+            <p>Ensuring our projects stay on track and meet deadlines while maintaining quality.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="cta-contact">
+    <h2>Get In Touch</h2>
+    <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+    <a href="{% url 'contact' %}" class="neon-button">Contact Us</a>
+</section>
+{% endblock %}

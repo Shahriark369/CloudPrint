@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}FAQ - Cloud Print{% endblock %}
+
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/faq.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="faq-content">
+        <h1>Frequently Asked Questions</h1>
+        <p>If you have any questions, you may find the answers here. If not, feel free to contact us!</p>
+    </div>
+
+    <div class="faq-list">
+        <!-- Question 1 -->
+        <div class="faq-item">
+            <i class="fas fa-question-circle fa-2x"></i>
+            <h2>What is Cloud Print?</h2>
+            <p>Cloud Print is an online platform that allows you to print documents, photos, and more with high-quality prints and excellent customer service.</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+            <i class="fas fa-clock fa-2x"></i>
+            <h2>How long does it take to process an order?</h2>
+            <p>Our processing times vary based on the size and complexity of the order, but typically orders are completed within 2-3 business days.</p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+            <i class="fas fa-shipping-fast fa-2x"></i>
+            <h2>Do you offer delivery services?</h2>
+            <p>Yes! We offer prompt delivery services, ensuring that your prints reach you in perfect condition and on time.</p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+            <i class="fas fa-cogs fa-2x"></i>
+            <h2>Can I request custom printing services?</h2>
+            <p>Yes, we offer custom printing options to suit your needs. Whether it's size, color, or material, we can print it the way you want.</p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item">
+            <i class="fas fa-credit-card fa-2x"></i>
+            <h2>What payment methods do you accept?</h2>
+            <p>We accept a variety of payment methods including credit/debit cards, PayPal, and other secure online payment options.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
